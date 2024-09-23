@@ -38,17 +38,16 @@ const modal = document.getElementById('modal');
 const openBtn = document.getElementById('first-donate-now-btn');
 const closeBtn = document.getElementById('close-btn');
 
-openBtn.addEventListener('click', function() {
+openBtn.addEventListener('click', function () {
 
     modal.classList.remove('hidden');
     document.getElementById("nav-bar").classList.add("hidden");
     donationBtn.classList.add("hidden")
     historyBtn.classList.add("hidden")
-    donationButtonSecond.classList.remove('hidden');
 
 });
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
     modal.classList.add('hidden');
     document.getElementById("nav-bar").classList.remove("hidden");
     donationBtn.classList.remove("hidden")
@@ -59,17 +58,16 @@ closeBtn.addEventListener('click', function() {
 // second button 
 const openBtnTwo = document.getElementById('second-donate-now-button');
 
-openBtnTwo.addEventListener('click', function() {
+openBtnTwo.addEventListener('click', function () {
 
     modal.classList.remove('hidden');
     document.getElementById("nav-bar").classList.add("hidden");
     donationBtn.classList.add("hidden")
     historyBtn.classList.add("hidden")
-    donationButtonSecond.classList.remove('hidden');
 
 });
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
     modal.classList.add('hidden');
     document.getElementById("nav-bar").classList.remove("hidden");
     donationBtn.classList.remove("hidden")
@@ -80,17 +78,16 @@ closeBtn.addEventListener('click', function() {
 // Third donate now 
 const openBtnThree = document.getElementById('third-button');
 
-openBtnThree.addEventListener('click', function() {
+openBtnThree.addEventListener('click', function () {
 
     modal.classList.remove('hidden');
     document.getElementById("nav-bar").classList.add("hidden");
     donationBtn.classList.add("hidden")
     historyBtn.classList.add("hidden")
-    donationButtonSecond.classList.remove('hidden');
 
 });
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
     modal.classList.add('hidden');
     document.getElementById("nav-bar").classList.remove("hidden");
     donationBtn.classList.remove("hidden")
