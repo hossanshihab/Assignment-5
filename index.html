@@ -17,13 +17,14 @@
 
     <!-- Style css -->
     <style>
-        font-family {
-            font-family: "Lexend", sans-serif;
+        body {
+            font-family: 'Lexend', sans-serif;
         }
     </style>
+
 </head>
 
-<body class="font-family">
+<body>
 
     <header id="nav-bar" class="bg-[#F9F7F3] fixed top-0 w-full z-[1000] shadow-md">
         <nav
@@ -48,6 +49,7 @@
         </nav>
     </header>
 
+    <!-- Donation and history button -->
     <section>
         <div class="text-center space-x-10 mt-48 fixed top-0 w-full z-[1000] backdrop-blur-md">
             <!-- Donation and History Button  -->
@@ -97,7 +99,6 @@
             </div>
         </div>
 
-
         <!-- Second Donation Field -->
         <div id="donation-two" class="flex flex-col sm:flex-row sm:justify-center p-5 mt-12 gap-10 sm:gap-20">
             <!-- Image Section -->
@@ -108,9 +109,12 @@
             <!-- Donation Content Section -->
             <div class="w-full sm:w-[50%]">
                 <!-- Donation Button -->
-                <button class="btn w-full sm:w-auto flex items-center justify-center text-center mb-5 p-4 rounded-lg">
-                    <img class="h-6 w-auto mr-2" src="./assets/coin.png" alt="">
-                    <span class="font-bold text-2xl text-center" id="added-donation-two">0</span> BDT
+                <button class="btn w-full sm:w-auto flex flex-col items-center justify-center  mb-5 p-4 rounded-lg">
+                    <img src="./assets/coin.png" alt="" />
+                    <br>
+                    <div class="text-xl font-bold">
+                        <span id="added-donation-two">0</span> BDT
+                    </div>
                 </button>
 
                 <!-- Donation Text and Input -->
@@ -132,9 +136,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <!-- Third Donation Field  -->
         <div id="donation-three"
             class="flex flex-col sm:flex-row items-center sm:p-5 sm:justify-center mt-12 gap-10 sm:gap-20 mb-10">
@@ -146,10 +147,12 @@
             <!-- Donation Content Section -->
             <div class="w-full sm:w-[50%]">
                 <!-- Donation Button -->
-                <button
-                    class="btn w-full sm:w-auto flex items-center justify-center text-2xl font-bold mb-5 p-4 rounded-lg">
-                    <img class="h-6 w-auto mr-2" src="./assets/coin.png" alt="">
-                    <span id="added-donation-three">0</span> BDT
+                <button class="btn w-full sm:w-auto flex flex-col items-center justify-center  mb-5 p-4 rounded-lg">
+                    <img src="./assets/coin.png" alt="" />
+                    <br>
+                    <div class="text-xl font-bold">
+                        <span id="added-donation-three">0</span> BDT
+                    </div>
                 </button>
 
                 <!-- Donation Text and Input -->
@@ -172,11 +175,13 @@
             </div>
         </div>
 
-        <!-- Modal section -->
 
-        <main class="flex justify-center items-center mt-52 text-center">
-            <div id="modal" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center">
-                <div class="bg-white p-10 rounded-lg flex flex-col items-center justify-center gap-5 w-[500px] h-[500px]">
+        <!-- Modal section -->
+        <section class="flex justify-center items-center mt-52 text-center">
+            <div id="modal"
+                class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center">
+                <div
+                    class="bg-white p-10 rounded-lg flex flex-col items-center justify-center gap-5 w-[500px] h-[500px]">
                     <h1 class="font-bold text-4xl text-center">Congrats!</h1>
                     <img src="./assets/coin.png" alt="Coin">
                     <p>You have Donated For Human Kind</p>
@@ -184,10 +189,7 @@
                     <button id="close-btn" class="btn">Close Confirmation</button>
                 </div>
             </div>
-        </main>
-        
-        
-
+        </section>
 
         <!-- History section -->
         <section id="history" class="w-11/12 mx-auto hidden">
