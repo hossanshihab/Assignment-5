@@ -175,16 +175,18 @@
         <!-- Modal section -->
 
         <main class="flex justify-center items-center mt-52 text-center">
-            <div id="modal" class="hidden">
-                <div class=" flex flex-col items-center justify-center gap-5">
+            <div id="modal" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center">
+                <div class="bg-white p-10 rounded-lg flex flex-col items-center justify-center gap-5 w-[500px] h-[500px]">
                     <h1 class="font-bold text-4xl text-center">Congrats!</h1>
-                    <img src="./assets/coin.png" alt="">
+                    <img src="./assets/coin.png" alt="Coin">
                     <p>You have Donated For Human Kind</p>
                     <p class="font-bold text-4xl">SuccessFully</p>
-                    <button class="btn">close confirmation</button>
+                    <button id="close-btn" class="btn">Close Confirmation</button>
                 </div>
             </div>
         </main>
+        
+        
 
 
         <!-- History section -->

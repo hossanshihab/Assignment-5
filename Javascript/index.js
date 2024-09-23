@@ -7,7 +7,7 @@ document.getElementById("first-donate-now-btn")
         const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
 
         // Input Validation 
-        if (firstDonateInput <= 0 || isNaN(firstDonateInput)){
+        if (firstDonateInput <= 0 || isNaN(firstDonateInput)) {
             alert("Please enter a valid donation amount.");
             return;
         }
@@ -19,6 +19,7 @@ document.getElementById("first-donate-now-btn")
 
         document.getElementById("main-balance").innerText = totalBalance;
         document.getElementById("added-donation").innerText = addedDonation;
+
 
 
         // history list 
@@ -44,7 +45,7 @@ document.getElementById("second-donate-now-button")
         const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
 
         // Input Validation 
-        if (firstDonateInput <= 0 || isNaN(firstDonateInput)){
+        if (firstDonateInput <= 0 || isNaN(firstDonateInput)) {
             alert("Please enter a valid donation amount.");
             return;
         }
@@ -78,7 +79,7 @@ document.getElementById("third-button")
         const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
 
         // Input Validation 
-        if (firstDonateInput <= 0 || isNaN(firstDonateInput)){
+        if (firstDonateInput <= 0 || isNaN(firstDonateInput)) {
             alert("Please enter a valid donation amount.");
             return;
         }
