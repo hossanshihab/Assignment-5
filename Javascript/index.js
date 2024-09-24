@@ -21,7 +21,6 @@ document.getElementById("first-donate-now-btn")
         document.getElementById("added-donation").innerText = addedDonation;
 
 
-
         // history list 
         const historyItem = document.createElement("div");
         historyItem.className = 'bg-white p-3 rounded-md border-2';
@@ -31,13 +30,13 @@ document.getElementById("first-donate-now-btn")
         <p class="text-3xl text-gray-600 font-bold">${firstDonateInput.toFixed(2)}</p>
         `;
 
+        // History button 
         const historyContainer = document.getElementById("history-section");
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
     })
 
 
 // second Button
-
 
 document.getElementById("second-donate-now-button")
     .addEventListener("click", function () {
@@ -101,6 +100,7 @@ document.getElementById("third-button")
         <p class="text-3xl text-gray-600 font-bold">${firstDonateInput.toFixed(2)}</p>
         `;
 
+        // history container section 
         const historyContainer = document.getElementById("history-section");
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
     })
@@ -110,20 +110,17 @@ document.getElementById("third-button")
 
 // history button call back function
 document.getElementById("history-button").addEventListener("click", function () {
-    // Hide all donation sections
+    // Hide all donation sections by call back function
     historyButton("donation-one");
     historyButton("donation-two");
     historyButton("donation-three");
 });
 
 // Donation Button call back function
-
 document.getElementById("donation-button").addEventListener("click", function () {
-    // call functions to switch 
+    // call functions to switch back
     donationButton("donation-one")
     donationButton("donation-two")
     donationButton("donation-three")
     donationButton("history")
-
-
 })

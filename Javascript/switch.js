@@ -6,7 +6,7 @@
 // Function For History Button 
 function historyButton(id) {
     const donationSection = document.getElementById(id);
-    // Toggle hidden class
+    // Toggle to hidden class
     donationSection.classList.add("hidden");
 
     // Switch button colors
@@ -31,7 +31,7 @@ function donationButton(id) {
 
 
 
-// Modal Popup 
+// Modal Popup show 
 const donationBtn = document.getElementById("donation-button");
 const historyBtn = document.getElementById("history-button")
 const modal = document.getElementById('modal');
